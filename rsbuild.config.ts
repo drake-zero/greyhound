@@ -33,6 +33,10 @@ export default defineConfig({
       css: '',
     },
     filenameHash: false,
+    filename: {
+      js: 'bundle.[name].js',
+      css: 'bundle.[name].css'
+    }
   },
   dev: {
     writeToDisk: true,
