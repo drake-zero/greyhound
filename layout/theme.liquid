@@ -8,6 +8,7 @@
   </head>
   <body>
     {{ 'index.js' | asset_url | script_tag }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ content_for_layout }}
   </body>
 </html>

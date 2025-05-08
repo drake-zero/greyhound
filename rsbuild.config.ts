@@ -1,9 +1,30 @@
-export default {
+import { defineConfig } from '@rsbuild/core';
+import fs from 'fs';
+import path from 'path';
+
+// Find all .ts and .js files in /src/js/templates
+const templatesDir = path.resolve(__dirname, 'src/js/templates');
+const templateEntries: Record<string, string> = {};
+
+if (fs.existsSync(templatesDir)) {
+  fs.readdirSync(templatesDir).forEach(file => {
+    if (/\.(ts|js)$/.test(file)) {
+      const name = path.parse(file).name; // e.g., 'product'
+      templateEntries[name] = `./src/js/templates/${file}`;
+    }
+  });
+}
+
+// Merge with your other entries
+const entries = {
+  index: './src/index.ts',
+  style: './src/index.css',
+  ...templateEntries,
+};
+
+export default defineConfig({
   source: {
-    entry: {
-      index: './src/index.ts', // Your TS entry
-      meow: './src/meow.ts'
-    },
+    entry: entries,
   },
   output: {
     distPath: {
@@ -11,18 +32,14 @@ export default {
       js: '',
       css: '',
     },
-    filename: 'bundle.[name].js',
-    cssFilename: 'bundle.[name].css',
-    filenameHash: false
+    filenameHash: false,
   },
   dev: {
     writeToDisk: true,
-    hmr: false
-  },
-  devServer: {
-    hot: false
+    hmr: false,
+    liveReload: false,
   },
   tools: {
     htmlPlugin: false,
   },
-};
+});

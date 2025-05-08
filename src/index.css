@@ -5,6 +5,9 @@ body {
   background-image: linear-gradient(to bottom, #020917, #101725);
 }
 
+.meow {
+  background: #1e1e1e;
+}
 .content {
   display: flex;
   min-height: 100vh;
