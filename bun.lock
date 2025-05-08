@@ -1,0 +1,63 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "greyhound",
+      "devDependencies": {
+        "@rsbuild/core": "^1.3.15",
+        "typescript": "^5.8.3",
+      },
+    },
+  },
+  "packages": {
+    "@module-federation/error-codes": ["@module-federation/error-codes@0.13.1", "", {}, "sha512-azgGDBnFRfqlivHOl96ZjlFUFlukESz2Rnnz/pINiSqoBBNjUE0fcAZP4X6jgrVITuEg90YkruZa7pW9I3m7Uw=="],
+
+    "@module-federation/runtime": ["@module-federation/runtime@0.13.1", "", { "dependencies": { "@module-federation/error-codes": "0.13.1", "@module-federation/runtime-core": "0.13.1", "@module-federation/sdk": "0.13.1" } }, "sha512-ZHnYvBquDm49LiHfv6fgagMo/cVJneijNJzfPh6S0CJrPS2Tay1bnTXzy8VA5sdIrESagYPaskKMGIj7YfnPug=="],
+
+    "@module-federation/runtime-core": ["@module-federation/runtime-core@0.13.1", "", { "dependencies": { "@module-federation/error-codes": "0.13.1", "@module-federation/sdk": "0.13.1" } }, "sha512-TfyKfkSAentKeuvSsAItk8s5tqQSMfIRTPN2e1aoaq/kFhE+7blps719csyWSX5Lg5Es7WXKMsXHy40UgtBtuw=="],
+
+    "@module-federation/runtime-tools": ["@module-federation/runtime-tools@0.13.1", "", { "dependencies": { "@module-federation/runtime": "0.13.1", "@module-federation/webpack-bundler-runtime": "0.13.1" } }, "sha512-GEF1pxqLc80osIMZmE8j9UKZSaTm2hX2lql8tgIH/O9yK4wnF06k6LL5Ah+wJt+oJv6Dj55ri/MoxMP4SXoPNA=="],
+
+    "@module-federation/sdk": ["@module-federation/sdk@0.13.1", "", {}, "sha512-bmf2FGQ0ymZuxYnw9bIUfhV3y6zDhaqgydEjbl4msObKMLGXZqhse2pTIIxBFpIxR1oONKX/y2FAolDCTlWKiw=="],
+
+    "@module-federation/webpack-bundler-runtime": ["@module-federation/webpack-bundler-runtime@0.13.1", "", { "dependencies": { "@module-federation/runtime": "0.13.1", "@module-federation/sdk": "0.13.1" } }, "sha512-QSuSIGa09S8mthbB1L6xERqrz+AzPlHR6D7RwAzssAc+IHf40U6NiTLPzUqp9mmKDhC5Tm0EISU0ZHNeJpnpBQ=="],
+
+    "@rsbuild/core": ["@rsbuild/core@1.3.17", "", { "dependencies": { "@rspack/core": "1.3.9", "@rspack/lite-tapable": "~1.0.1", "@swc/helpers": "^0.5.17", "core-js": "~3.42.0", "jiti": "^2.4.2" }, "bin": { "rsbuild": "bin/rsbuild.js" } }, "sha512-vDRUjPws7vUcdn2uXOSOknGRF9Jt0wQRH6AU0G7O0GsX8liUmE/I7+EpYvhuQIRp2ekOz1cmmSTrRntEjp7WoQ=="],
+
+    "@rspack/binding": ["@rspack/binding@1.3.9", "", { "optionalDependencies": { "@rspack/binding-darwin-arm64": "1.3.9", "@rspack/binding-darwin-x64": "1.3.9", "@rspack/binding-linux-arm64-gnu": "1.3.9", "@rspack/binding-linux-arm64-musl": "1.3.9", "@rspack/binding-linux-x64-gnu": "1.3.9", "@rspack/binding-linux-x64-musl": "1.3.9", "@rspack/binding-win32-arm64-msvc": "1.3.9", "@rspack/binding-win32-ia32-msvc": "1.3.9", "@rspack/binding-win32-x64-msvc": "1.3.9" } }, "sha512-3FFen1/0F2aP5uuCm8vPaJOrzM3karCPNMsc5gLCGfEy2rsK38Qinf9W4p1bw7+FhjOTzoSdkX+LFHeMDVxJhw=="],
+
+    "@rspack/binding-darwin-arm64": ["@rspack/binding-darwin-arm64@1.3.9", "", { "os": "darwin", "cpu": "arm64" }, "sha512-lfTmsbUGab9Ak/X6aPLacHLe4MBRra+sLmhoNK8OKEN3qQCjDcomwW5OlmBRV5bcUYWdbK8vgDk2HUUXRuibVg=="],
+
+    "@rspack/binding-darwin-x64": ["@rspack/binding-darwin-x64@1.3.9", "", { "os": "darwin", "cpu": "x64" }, "sha512-rYuOUINhnhLDbG5LHHKurRSuKIsw0LKUHcd6AAsFmijo4RMnGBJ4NOI4tOLAQvkoSTQ+HU5wiTGSQOgHVhYreQ=="],
+
+    "@rspack/binding-linux-arm64-gnu": ["@rspack/binding-linux-arm64-gnu@1.3.9", "", { "os": "linux", "cpu": "arm64" }, "sha512-pBKnS2Fbn9cDtWe1KcD1qRjQlJwQhP9pFW2KpxdjE7qXbaO11IHtem6dLZwdpNqbDn9QgyfdVGXBDvBaP1tGwA=="],
+
+    "@rspack/binding-linux-arm64-musl": ["@rspack/binding-linux-arm64-musl@1.3.9", "", { "os": "linux", "cpu": "arm64" }, "sha512-0B+iiINW0qOEkBE9exsRcdmcHtYIWAoJGnXrz9tUiiewRxX0Cmm0MjD2HAVUAggJZo+9IN8RGz5PopCjJ/dn1g=="],
+
+    "@rspack/binding-linux-x64-gnu": ["@rspack/binding-linux-x64-gnu@1.3.9", "", { "os": "linux", "cpu": "x64" }, "sha512-82izGJw/qxJ4xaHJy/A4MF7aTRT9tE6VlWoWM4rJmqRszfujN/w54xJRie9jkt041TPvJWGNpYD4Hjpt0/n/oA=="],
+
+    "@rspack/binding-linux-x64-musl": ["@rspack/binding-linux-x64-musl@1.3.9", "", { "os": "linux", "cpu": "x64" }, "sha512-V9nDg63iPI6Z7kM11UPV5kBdOdLXPIu3IgI2ObON5Rd4KEZr7RLo/Q4HKzj0IH27Zwl5qeBJdx69zZdu66eOqg=="],
+
+    "@rspack/binding-win32-arm64-msvc": ["@rspack/binding-win32-arm64-msvc@1.3.9", "", { "os": "win32", "cpu": "arm64" }, "sha512-owWCJTezFkiBOSRzH+eOTN15H5QYyThHE5crZ0I30UmpoSEchcPSCvddliA0W62ZJIOgG4IUSNamKBiiTwdjLQ=="],
+
+    "@rspack/binding-win32-ia32-msvc": ["@rspack/binding-win32-ia32-msvc@1.3.9", "", { "os": "win32", "cpu": "ia32" }, "sha512-YUuNA8lkGSXJ07fOjkX+yuWrWcsU5x5uGFuAYsglw+rDTWCS6m9HSwQjbCp7HUp81qPszjSk+Ore5XVh07FKeQ=="],
+
+    "@rspack/binding-win32-x64-msvc": ["@rspack/binding-win32-x64-msvc@1.3.9", "", { "os": "win32", "cpu": "x64" }, "sha512-E0gtYBVt5vRj0zBeplEf8wsVDPDQ6XBdRiFVUgmgwYUYYkXaalaIvbD1ioB8cA05vfz8HrPGXcMrgletUP4ojA=="],
+
+    "@rspack/core": ["@rspack/core@1.3.9", "", { "dependencies": { "@module-federation/runtime-tools": "0.13.1", "@rspack/binding": "1.3.9", "@rspack/lite-tapable": "1.0.1", "caniuse-lite": "^1.0.30001717" }, "peerDependencies": { "@swc/helpers": ">=0.5.1" }, "optionalPeers": ["@swc/helpers"] }, "sha512-u7usd9srCBPBfNJCSvsfh14AOPq6LCVna0Vb/aA2nyJTawHqzfAMz1QRb/e27nP3NrV6RPiwx03W494Dd6r6wg=="],
+
+    "@rspack/lite-tapable": ["@rspack/lite-tapable@1.0.1", "", {}, "sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w=="],
+
+    "@swc/helpers": ["@swc/helpers@0.5.17", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A=="],
+
+    "caniuse-lite": ["caniuse-lite@1.0.30001717", "", {}, "sha512-auPpttCq6BDEG8ZAuHJIplGw6GODhjw+/11e7IjpnYCxZcW/ONgPs0KVBJ0d1bY3e2+7PRe5RCLyP+PfwVgkYw=="],
+
+    "core-js": ["core-js@3.42.0", "", {}, "sha512-Sz4PP4ZA+Rq4II21qkNqOEDTDrCvcANId3xpIgB34NDkWc3UduWj2dqEtN9yZIq8Dk3HyPI33x9sqqU5C8sr0g=="],
+
+    "jiti": ["jiti@2.4.2", "", { "bin": { "jiti": "lib/jiti-cli.mjs" } }, "sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A=="],
+
+    "tslib": ["tslib@2.8.1", "", {}, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
+
+    "typescript": ["typescript@5.8.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ=="],
+  }
+}
