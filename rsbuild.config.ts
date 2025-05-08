@@ -2,24 +2,30 @@ import { defineConfig } from '@rsbuild/core';
 import fs from 'fs';
 import path from 'path';
 
-// Find all .ts and .js files in /src/js/templates
-const templatesDir = path.resolve(__dirname, 'src/js/templates');
-const templateEntries: Record<string, string> = {};
-
-if (fs.existsSync(templatesDir)) {
-  fs.readdirSync(templatesDir).forEach(file => {
-    if (/\.(ts|js)$/.test(file)) {
-      const name = path.parse(file).name; // e.g., 'product'
-      templateEntries[name] = `./src/js/templates/${file}`;
-    }
-  });
+function getEntriesFromDir(dir: string): Record<string, string> {
+  const entries: Record<string, string> = {};
+  if (fs.existsSync(dir)) {
+    fs.readdirSync(dir).forEach(file => {
+      if (/\.(ts|js)$/.test(file)) {
+        const name = path.parse(file).name;
+        entries[name] = path.join(dir, file);
+      }
+    });
+  }
+  return entries;
 }
 
-// Merge with your other entries
-const entries = {
-  index: './src/index.ts',
+const templatesDir = path.resolve(__dirname, 'src/js/templates');
+const componentsDir = path.resolve(__dirname, 'src/js/components');
+
+const templateEntries = getEntriesFromDir(templatesDir);
+const componentEntries = getEntriesFromDir(componentsDir);
+
+const entries: Record<string, string> = {
+  main: './src/main.ts',
   style: './src/index.css',
   ...templateEntries,
+  ...componentEntries,
 };
 
 export default defineConfig({
