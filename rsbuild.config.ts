@@ -36,7 +36,8 @@ export default defineConfig({
     filename: {
       js: 'bundle.[name].js',
       css: 'bundle.[name].css'
-    }
+    },
+    cleanDistPath: false
   },
   dev: {
     writeToDisk: true,
