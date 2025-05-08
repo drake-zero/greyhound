@@ -1,0 +1,860 @@
+{
+  "article": [
+    {
+      "key": "featured_product",
+      "namespace": "custom",
+      "name": "Featured Product",
+      "description": "Add a Featured Product for this post",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "photos_author",
+      "namespace": "custom",
+      "name": "Photos by",
+      "description": "Author of photography on the post",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "article_author",
+      "namespace": "custom",
+      "name": "Article By",
+      "description": "Firstname Lastname",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "external_link",
+      "namespace": "custom",
+      "name": "External Link",
+      "description": "Add an external link for press posts",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "external_source",
+      "namespace": "custom",
+      "name": "External Source",
+      "description": "Add a name of a news outlet to feature in external link for press posts",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "do_not_index",
+      "namespace": "custom",
+      "name": "Do not index",
+      "description": "Hide this blog post from google indexing (for press posts)",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "press_release",
+      "namespace": "custom",
+      "name": "Press Release",
+      "description": "(Optional) Display this post as a press release",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    }
+  ],
+  "blog": [
+    {
+      "key": "image",
+      "namespace": "custom",
+      "name": "Cover Image",
+      "description": "The image to be displayed on menu and social share",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "collection": [
+    {
+      "key": "collection_navigation_image",
+      "namespace": "custom",
+      "name": "Collection Navigation Image",
+      "description": "Add a featured image to this collection to be displayed in collection navigation",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "global_navigation_image",
+      "namespace": "custom",
+      "name": "Global Navigation Image",
+      "description": "Add an image for main navigation for top-level product collections",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [
+    {
+      "key": "image",
+      "namespace": "custom",
+      "name": "Featured Image",
+      "description": "The image to be displayed on menu and social share",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "answer_cards",
+      "namespace": "custom",
+      "name": "Answer Cards",
+      "description": "Used on Founders page",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "product": [
+    {
+      "key": "product_image_square_crop",
+      "namespace": "custom",
+      "name": "Product Image Square Crop",
+      "description": "Front-facing image, square",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_image_close_crop",
+      "namespace": "custom",
+      "name": "Product Image Close Crop",
+      "description": "Product Image, Front Facing, Cropped close to package",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_image_angled",
+      "namespace": "custom",
+      "name": "Product Image Angled",
+      "description": "Product Image, angled view, square crop",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_nutrition_image",
+      "namespace": "custom",
+      "name": "Product Nutrition Image",
+      "description": "Product Image, Nutrition Facts Side, Square Crop",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "featured_reviews",
+      "namespace": "custom",
+      "name": "Featured Reviews",
+      "description": "Link specific reviews to be featured for this product.",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "featured_reviews_image",
+      "namespace": "custom",
+      "name": "Featured Reviews Image",
+      "description": "Add an image for the featured reviews section",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_display_title",
+      "namespace": "custom",
+      "name": "Product Display Title",
+      "description": "Add.a display title describing the flavor, etc. (e.g. \"Traditional\")",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_type_short",
+      "namespace": "custom",
+      "name": "Product Type (Short)",
+      "description": "A shortened version of the product type, used for product cards",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_type_full",
+      "namespace": "custom",
+      "name": "Product Type (Full)",
+      "description": "Full-length product type/category, on PDP and PCP",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "ingredients_list",
+      "namespace": "custom",
+      "name": "Ingredients List",
+      "description": "Add a list of ingredients as an unordered list",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "serving_size",
+      "namespace": "custom",
+      "name": "Serving Size",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "calories",
+      "namespace": "custom",
+      "name": "Calories",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "total_fat",
+      "namespace": "custom",
+      "name": "Total Fat",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "sodium",
+      "namespace": "custom",
+      "name": "Sodium",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "protein",
+      "namespace": "custom",
+      "name": "Protein",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "total_carbs",
+      "namespace": "custom",
+      "name": "Total Carbs",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "total_sugar",
+      "namespace": "custom",
+      "name": "Total Sugar",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "added_sugar_amount",
+      "namespace": "custom",
+      "name": "Added Sugar Amount",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "added_sugar_percentage",
+      "namespace": "custom",
+      "name": "Added Sugar Percentage",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "scroll_scene_stills",
+      "namespace": "custom",
+      "name": "Scroll Scene Stills",
+      "description": "Add a set of files that comprise a desktop scroll scene",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_lifestyle_image",
+      "namespace": "custom",
+      "name": "Product Lifestyle Image",
+      "description": "Used below PDP purchasing",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_accent_color",
+      "namespace": "custom",
+      "name": "Product Accent Color",
+      "description": "Add an accent color associated with this product (flavor dropdown)",
+      "type": {
+        "name": "color",
+        "category": "COLOR"
+      }
+    },
+    {
+      "key": "media_card_1_text",
+      "namespace": "custom",
+      "name": "Media Card - Text",
+      "description": "Add a short amount of text for a media card on the PDP",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "media_card_1_image",
+      "namespace": "custom",
+      "name": "Media Card - Image",
+      "description": "Add an optional image for a media card on the PDP",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "unit_size",
+      "namespace": "custom",
+      "name": "Unit Size",
+      "description": "Add size per unit (16 oz, etc.)",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "description_2",
+      "namespace": "custom",
+      "name": "Description 2",
+      "description": "Add a below-the-fold subscription (2 of 2)",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "description_1",
+      "namespace": "custom",
+      "name": "Description 1",
+      "description": "Add an above-the-fold product description (1 of 2)",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "caffeine_amount",
+      "namespace": "custom",
+      "name": "Caffeine Amount",
+      "description": "Add a caffeine amount in mg",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_feature_categories",
+      "namespace": "custom",
+      "name": "Product Feature Categories",
+      "description": "Add tags for revelant features, such as \"sparkling\" or \"Low Calorie\"",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_card_tag",
+      "namespace": "custom",
+      "name": "Product Card Tag",
+      "description": "Add a custom tag to display on product cards (e.g. \"Bestseller\")",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_card_hover_image",
+      "namespace": "custom",
+      "name": "Product Card Hover Image",
+      "description": "Add an image to be shown on hover on a product card",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "scroll_scene_stills_2",
+      "namespace": "custom",
+      "name": "Scroll Scene Stills - 2",
+      "description": "A second field for inputting product scroll stills above Frame 50",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products",
+      "description": "List of related products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "related_products_display",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products settings",
+      "description": "Determines how related products are displayed along with algorithmic product recommendations",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "complementary_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Complementary products",
+      "description": "List of complementary products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "short_description",
+      "namespace": "custom",
+      "name": "Short Description",
+      "description": "Add a short description used on blog Featured Product module",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mikmak_upc",
+      "namespace": "custom",
+      "name": "MikMak UPC",
+      "description": "Add a UPC to enable the MikMak store locator widget",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "hidden",
+      "namespace": "seo",
+      "name": "Hide from Search",
+      "description": "",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "merchandise_detail_text",
+      "namespace": "custom",
+      "name": "Merchandise Detail - Text",
+      "description": "(Optional) Richtext field to display on merchandise detail card",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "merchandise_detail_title",
+      "namespace": "custom",
+      "name": "Merchandise Detail - Title",
+      "description": "(Optional) Add a title to a merchandise detail card",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "merchandise_detail_image",
+      "namespace": "custom",
+      "name": "Merchandise Detail - Image",
+      "description": "(Optional) Add an image for an optional merchandise detail feature",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_lifestyle_image_3",
+      "namespace": "custom",
+      "name": "Product Lifestyle Image 3",
+      "description": "(Optional) Add an additional lifestyle image on merchandise PDP",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_lifestyle_image_2",
+      "namespace": "custom",
+      "name": "Product Lifestyle Image 2",
+      "description": "(Optional) Add a second lifestyle image to display on merchandise PDP",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "merchandise_type",
+      "namespace": "custom",
+      "name": "Merchandise - Type",
+      "description": "(Optional) Add a merchandise type (e.g. Apparel) to show on Merchandise PDP",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "ingredients_list_plain_text_",
+      "namespace": "custom",
+      "name": "Ingredients List (plain text)",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "age_warning",
+      "namespace": "custom",
+      "name": "Age Warning",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "country_of_origin",
+      "namespace": "custom",
+      "name": "Country of Origin",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "manufacturer",
+      "namespace": "custom",
+      "name": "Manufacturer",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "custom_product",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Product",
+      "description": "Use to indicate whether or not the unique product identifiers (UPIs) GTIN, MPN, and brand are available for your product.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dietary-preferences",
+      "namespace": "shopify",
+      "name": "Dietary preferences",
+      "description": "Helps identify products suitable for specific diets, e.g. vegan, nut free",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tea-input-type",
+      "namespace": "shopify",
+      "name": "Tea input type",
+      "description": "Specifies the preparation style of tea, e.g. bags, K-cups",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "amazon_standard_identification_number",
+      "namespace": "custom",
+      "name": "Amazon Standard Identification Number",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "flavor",
+      "namespace": "shopify",
+      "name": "Flavor",
+      "description": "Specifies the taste or flavor of a product, e.g. vanilla, mint",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dietary-supplements",
+      "namespace": "shopify",
+      "name": "Dietary supplements",
+      "description": "Identifies the added nutrients in a product, like calcium or probiotics",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "custom_product_gallery",
+      "namespace": "custom",
+      "name": "Custom Product Gallery",
+      "description": "",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "multipack_products",
+      "namespace": "custom",
+      "name": "Multipack Products",
+      "description": "",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "variant": [
+    {
+      "key": "custom_label_4",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 4",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_3",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 3",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_2",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 2",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_1",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 1",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_0",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 0",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_system",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size System",
+      "description": "The country of the size system used by your product.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_type",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size Type",
+      "description": "Your apparel product’s cut.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mpn",
+      "namespace": "mm-google-shopping",
+      "name": "Google: MPN",
+      "description": "Your product’s Manufacturer Part Number (MPN).",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "gender",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Gender",
+      "description": "The gender for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "condition",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Condition",
+      "description": "The condition of your product at time of sale.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "age_group",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Age Group",
+      "description": "The demographic for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "amazon_standard_identification_number",
+      "namespace": "custom",
+      "name": "Amazon Standard Identification Number",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "shop": []
+}
