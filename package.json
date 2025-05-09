@@ -12,13 +12,12 @@
   "scripts": {
     "build": "rsbuild build && bun cleanOut.ts",
     "dev": "rsbuild dev",
-    "shop": "shopify theme dev --store=uncle-jims-borzoi-house.myshopify.com",
-    "preview": "rsbuild preview"
+    "shop": "shopify theme dev --store=uncle-jims-borzoi-house.myshopify.com"
   },
   "type": "module",
   "dependencies": {
     "@preact/signals-core": "^1.8.0",
-    "gsap": "^3.13.0",
-    "swiper": "^11.2.6"
+    "embla-carousel": "^8.6.0",
+    "gsap": "^3.13.0"
   }
 }

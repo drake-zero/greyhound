@@ -1,5 +1,4 @@
 import { gsap } from "gsap";
-import { Swiper } from "swiper";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -56,7 +55,6 @@ if (!customElements.get("woof-section")) {
       const tl = gsap.timeline();
 
       console.log("meow-section comp");
-      console.log(Swiper);
 
 
       console.log(tl);
