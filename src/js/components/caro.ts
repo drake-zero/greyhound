@@ -11,11 +11,11 @@ if (!customElements.get("embla-carousel")) {
     private removeDotBtnsAndClickHandlers: () => void
 
     connectedCallback() {
-      const emblaNode = this.querySelector('.embla') as HTMLElement
-      const viewportNode = emblaNode.querySelector('.embla__viewport') as HTMLElement
-      const prevBtnNode = emblaNode.querySelector('.embla__button--prev') as HTMLElement
-      const nextBtnNode = emblaNode.querySelector('.embla__button--next') as HTMLElement
-      const dotsNode = emblaNode.querySelector('.embla__dots') as HTMLElement
+      const emblaNode = <HTMLElement>this.querySelector('.embla')
+      const viewportNode = <HTMLElement>emblaNode.querySelector('.embla__viewport')
+      const prevBtnNode = <HTMLElement>emblaNode.querySelector('.embla__button--prev')
+      const nextBtnNode = <HTMLElement>emblaNode.querySelector('.embla__button--next')
+      const dotsNode = <HTMLElement>emblaNode.querySelector('.embla__dots')
 
       this.emblaApi = EmblaCarousel(viewportNode, OPTIONS)
 
