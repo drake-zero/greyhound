@@ -57,18 +57,32 @@ export default defineConfig({
     chunkSplit: {
       override: {
         cacheGroups: {
+          gsap: {
+            test: /[\\/]node_modules[\\/]gsap[\\/]/,
+            name: 'gsap',
+            chunks: 'all',
+            priority: 30, // Higher than vendors and signals
+            reuseExistingChunk: true,
+          },
+          signals: {
+            test: /[\\/]node_modules[\\/]@preact[\\/]signals-core[\\/]/,
+            name: 'signals',
+            chunks: 'all',
+            priority: 20, // Higher than vendors
+            enforce: true,
+            reuseExistingChunk: true,
+          },
           vendors: {
             test: /[\\/]node_modules[\\/]/,
-            name: "vendors", // This will name the chunk 'vendors'
-            chunks: "all",
-            priority: -10,
+            name: 'vendors',
+            chunks: 'all',
+            priority: 10,
             reuseExistingChunk: true,
-            filename: "bundle.vendors.js", // This sets the output filename
           },
-          // Optionally disable the default group
           default: false,
         },
       },
     },
   },
+
 });
